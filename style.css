@@ -1,0 +1,364 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+}
+.inline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    overflow: hidden;
+}
+
+/* menu icon */
+.menu-toggle{
+    display: none;
+}
+.menu-toggle .menu-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #070707;
+    margin: 5px 0;
+}
+
+/* Nav */
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    padding: 20px 0px 20px 0px;
+    font-family: 'Segoe UI';
+}
+.navbar.fixed {
+    margin: 0px;
+    background-color: #DC143C;     
+}
+.portfolio{
+    width: 42%;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+ul{
+  list-style-type: none;
+  width: 40%;  
+  
+}
+li{
+    padding: 15px;
+    font-size: 19px;
+    font-weight: 500;
+    left: -100%;
+}
+a{
+    color: black;
+}
+
+/* Home */
+#home{
+    background-size: 100%;
+    height: 610px;
+    background-attachment: fixed;
+}
+.homecontainer{
+    padding-top: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 105px;
+    line-height: 70px; 
+}
+.text1{
+    font-size: 25px;
+}
+.text2{
+    font-size: 75px;
+    font-weight: 500;
+}
+.text3{
+    font-size: 40px;
+}
+
+.hireme{
+    font-size: x-large;
+    padding: 10px 35px ;
+    border-radius: 8px;
+    border:  solid  #DC143C;
+    color: white;
+    background-color: #DC143C;
+}
+
+/* About */
+#about{
+    padding: 100px 0px 100px 0px;
+}
+.about{
+    line-height: 40px;
+    flex-direction: column;
+}   
+.aboutme{
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+h2.no-span {
+    z-index: -1; /* ise ye black lines red fixed nav bar ke piche ja ri h vrna scroll time vo blk line dikhti thi  */
+    font-size: large;
+    color: #DC143C;
+    font-family: sans-serif;
+    display: table;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 3px solid rgb(0, 0, 0);
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 20px;
+      width: 55px;
+    }
+    &:before { right: 1.5%; }
+    &:after { left: 1.5%; }
+}
+
+.aboutcontainer{
+    margin: 30px;
+    flex-direction: row;
+    column-gap: 150px;
+    line-height: 25px;
+}
+.aboutimg{
+    /* flex: 1; */
+    width: 50%;
+    background-image: url("imgs/2.jpg");
+    background-size: cover;
+    background-position: 50%;
+    height: 370px;
+    width: 360px;
+    
+}
+.aboutcontent{
+    /* flex: 1; */
+    width: 50%;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.brief{
+    font-family: sans-serif;
+    font-size: 17px;
+    word-spacing: 8px;
+    text-align: justify;
+    margin-right: 100px; 
+    margin: 20px 0px 20px;  
+}
+
+/* Services */
+#services{
+    background-color: black;
+    color: white;
+    padding: 100px 0px 100px 0px;
+}
+.services{
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+.servicescontainer{
+    flex-direction: column;
+    line-height: 40px;
+}
+
+h2.no-span2 {
+    font-size: medium;
+    color: #da1657;
+    font-family: sans-serif;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    z-index: auto;
+    line-height: 30px;
+}
+
+.servicescontent{
+    font-family: sans-serif; 
+    margin: 20px; 
+}
+
+.servicesitem{
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 5px;
+    padding: 30px;
+    border: 1px solid rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+}
+.servicesitem:hover{
+    background-color: #DC143C;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.spin-img{
+    transition: transform 0.5s ease;
+}
+.spin-img:hover{
+    animation: spin 2s linear infinite; 
+}
+
+.servicesimg:hover{
+    background-color: white;
+}
+
+.servicesimg{
+    background-color: #DC143C;
+    height: 80px;
+    width: 90px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.servicesitem{
+    line-height: 80px;
+}
+.servicesitem h1{
+    font-size: xx-large;
+    font-weight: 100;
+}
+.servicestext{
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 25px;   
+}
+
+/* Skills */
+#skills{
+    padding: 100px 0px 150px 0px;
+    font-family: Verdana;
+}
+.skills{
+    flex-direction: column;
+    line-height: 38px;
+}
+.skillscontainer{
+    flex-direction: row;
+}
+.skilltxt1{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.skilltxt2{
+    font-size: 16px;
+    font-family: sans-serif;
+    word-spacing: 15px;
+    margin: 16px 0px 20px 0px;
+    line-height: 24px;
+}
+button a{
+    color: white;
+}
+
+.skillcontent1{
+    margin-top: 80px ;
+    width: 40%;
+    font-family: sans-serif;
+}
+.skillcontent2{
+    margin-top: 60px ;
+    width: 40%;
+    font-family: sans-serif;
+    line-height: 50px;
+    margin-left: 100px;
+}
+
+.bar{ 
+    font-size: larger;
+    flex-direction: column;
+}
+.item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.progress-container {
+    background-color: #c2bfbf;
+    height: 8px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.progress-bar {
+    background-color: #DC143C;
+    height: 6px;
+    border-radius: 4px;
+}
+
+/* Contact */
+.container{
+    padding: 50px 10px;
+    font-family: verdana;
+    font-size: 14px;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 40px;
+}
+.container p{
+    font-size: 15px;
+}
+.margin{
+    width: 40%;
+}
+.margin2{
+    width: 45%;
+}
+.height{
+    line-height: 25px;
+    margin: 10px;
+}
+.contactimg{
+    padding-right: 30px;
+}
+
+input{
+    border-radius: 6px;
+    height: 25px;
+    width: 250px;
+    margin: 10px;
+    font-size: larger;
+    padding: 10px;
+    border:  1px solid rgb(214, 208, 208);
+}
+.subject{
+    width: 550px;
+}
+.msg{
+    width: 555px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: larger;
+    padding: 10px;
+    border:  1px solid rgb(214, 208, 208);
+}
+.sendmsg{
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+    background-color: rgb(21, 19, 19);
+    color: white;
+    font-size: 16px;
+    font-family: Verdana;
+    padding: 30px;
+}
+
+.footer span{
+    color: #DC143C;
+}

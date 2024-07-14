@@ -1,0 +1,189 @@
+
+@media screen and (max-width: 768px) {
+    .portfolio{
+        font-size: xx-large;
+        width: 80%;
+        z-index: -5; /* ise portfolio piche piche ja ra menu toggle ke   */
+    }
+     /* menu toggle  */
+     .menu{
+        font-size: small;
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .menu.active {
+        z-index: -5; /* ise hamburger aage aagya h menutoggle pr hi show ho ra h   */
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: rgb(249, 249, 249);
+        height: 450px;
+        width: 100%;
+    }
+   
+
+    #home{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .homecontainer{
+        padding-top: 150px;
+        line-height: 60px;
+        margin-left: 50px;
+       }
+    .text1{
+        font-size: 23px ;
+    }
+    .text2{
+        font-size: 55px ;
+    }
+    .text3{
+        font-size: 29px;
+        font-weight: 400;
+    }
+    .hireme{
+        font-size: x-large;
+        padding: 10px 30px;
+        margin-top: 10px;
+    }
+    .aboutme{
+        font-size: 30px;
+    }
+    .aboutcontainer{
+        flex-direction: column;
+        row-gap: 70px;
+    }
+    .aboutimg{
+        height: 250px;
+        width: 50%;
+    }
+    .aboutcontent{
+        width: 95%;
+        text-align: center;
+    }
+    .servicescontent{
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+    .skillscontainer{
+        flex-direction: column-reverse;
+    }
+    .skillcontent1{
+        width: 85%;
+        text-align: center;
+    }
+    .skillcontent2{
+        margin-left: -10px;
+    }
+    .item{
+        width: 200%;
+    }
+    .progress-container{
+        width: 200% ;
+    }
+    .contact{
+        flex-direction: column;  
+    }
+    .container{
+        width: auto;
+    }
+   .margin{
+        width: 80%;
+        margin: 0%;
+        padding: 0%;  
+      }
+      .margin2{
+          width: 100%;
+      }
+   
+
+}
+
+@media screen and (max-width:600px) {
+    .portfolio{
+        font-size: 25px;
+    }
+    .text1{
+        font-size: 17px;
+    }
+    .text2{
+        font-size: 43px;
+    }
+    .text3{
+        font-size: 25px;
+    }
+    .homecontainer{
+        padding-top: 180px;
+        line-height: 48px;
+    }
+    .hireme{
+        font-size: medium;
+        padding: 10px 20px;
+    }
+    .aboutcontent{
+        font-size: larger;
+    }
+    .brief{
+        font-size: 14px;
+    }
+    .bar{
+        font-size: medium;
+    }
+    .item{
+        width: 200%;
+    }
+    .progress-container{
+        width: 200% ;
+    }
+    .margin{
+      width: 80%;
+      margin: 10% 0%;
+      padding: 0%;  
+      
+    }
+    .margin2{
+        margin-left: 20px;
+    }
+    .margin2 input{
+        width: 80%;
+    }
+    .servicesitem{
+        width: 50%;
+        /* line-height: 200px; */
+    }
+    .servicesitem h1{
+        font-size: x-large;
+        line-height: 50px;
+    }
+    .servicesimg{
+        height: 50px;
+        width: 60px;
+    }
+    .servicestext{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .text2{
+        font-size: 30px ;
+    }
+    .text3{
+        font-size: 20px;
+    }
+    
+    .servicesitem{
+        width: 50%;
+    }
+    .servicestext{
+        font-size: small;
+    }
+}
